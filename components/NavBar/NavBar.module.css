@@ -1,0 +1,16 @@
+.header{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1280px;
+    padding-left: 1rem;
+}

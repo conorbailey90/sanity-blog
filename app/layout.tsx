@@ -1,3 +1,5 @@
+import NavBar from '@/components/NavBar/NavBar'
+import Footer from '@/components/Footer/Footer'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -16,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-[#141414] text-[#FFFFFF]`  }>
+        <NavBar />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

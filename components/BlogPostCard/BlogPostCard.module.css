@@ -1,0 +1,67 @@
+.card{
+    border: 1px solid #424244;
+    padding: 1rem;
+    grid-column: span 6;
+    display: flex;
+    padding-right: 1rem;
+    background-color: #14141416;
+    backdrop-filter: blur(10px);
+}
+
+.button{
+    background-color: transparent;
+    border: 1px solid #424244;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: .5s;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.postInfo{
+    position: relative;
+    flex: 3;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.postImage{
+    position: relative;
+    overflow: hidden;
+    flex: 2;
+    height: 0;
+    padding-top: calc((100% * .4) * .56);
+    /* min-height: 200px; */
+    border: 1px solid #424244;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .card{
+        grid-column: span 6;
+        flex-direction: column-reverse;
+    }
+    .postImage{
+        margin-bottom: 1rem;
+        padding-top: calc((100%) * .56);
+    } 
+}
+
+@media only screen and (max-width: 650px) {
+
+    .card{
+        grid-column: span 12;
+        flex-direction: column-reverse;
+    }
+    .postImage{
+        margin-bottom: 1rem;
+        padding-top: calc((100%) * .56);
+    }
+}

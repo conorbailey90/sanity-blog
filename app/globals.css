@@ -1,27 +1,65 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+:root{
+    --max-width: 1280px;
+    --gap: 5px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+    font-family: 'Neue Montreal' ;
+    src: url(../public/fonts/NeueMontreal-Regular.woff2) format('woff2');
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Neue Montreal' ;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    
+}
+
+h1, h2, h3, h4, h5, p{
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 1.802rem;
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-size: 1.602rem;
+}
+
+h3{
+    font-size: 1.424rem;
+}
+
+h4{
+    font-size: 1.266rem;
+    margin-bottom: .5rem;
+}
+
+h5{
+    font-size: 1.125rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+html, body{
+    background-color: #141414;
+    color: white;
+}
+
+img{
+    margin-bottom: 1rem;
+}
+
+ul{
+    margin: 0rem 0 1rem 2rem;
 }

@@ -1,0 +1,15 @@
+.footer{
+    width: 100%;
+    display: flex;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.564);
+    margin-top: 2rem;
+    justify-content: center;
+    max-width: var(--max-width);
+}
+
+.container{
+    width: 90%;
+    padding: 1rem 2rem ;
+
+}
