@@ -72,13 +72,13 @@ async function page({params}: {params: {slug: string}}) {
             <h1>{post.title}</h1>
             <p>{`${post._createdAt.slice(8,10)}/${post._createdAt.slice(5,7)}/${post._createdAt.slice(0,4)}`}</p>
             <div className={styles.mainImage}>
-                <Image 
+                {post.imageUrl && <Image 
                     src={post.imageUrl} 
                     alt={post.image.alt} 
                     fill
                     style={{objectFit:"cover"}}
                     priority
-                /> 
+                /> }
             </div>
             <PortableText value={post.content} components={myPortableTextComponents}/>
             <Link href={'/'}>
