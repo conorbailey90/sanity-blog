@@ -71,15 +71,17 @@ async function page({params}: {params: {slug: string}}) {
         <div className={styles.container}>
             <h1>{post.title}</h1>
             <p>{`${post._createdAt.slice(8,10)}/${post._createdAt.slice(5,7)}/${post._createdAt.slice(0,4)}`}</p>
+            {post.imageUrl &&
             <div className={styles.mainImage}>
-                {post.imageUrl && <Image 
+                 <Image 
                     src={post.imageUrl} 
                     alt={post.image.alt} 
                     fill
                     style={{objectFit:"cover"}}
                     priority
-                /> }
+                /> 
             </div>
+            }
             <PortableText value={post.content} components={myPortableTextComponents}/>
             <Link href={'/'}>
                 <button className={styles.return}>

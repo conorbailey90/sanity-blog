@@ -10,7 +10,7 @@
 .container{
     display: flex;
     align-items: center;
-    width: 90%;
+    width: var(--width);
     max-width: 1280px;
     padding-left: 1rem;
 }
