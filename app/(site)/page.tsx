@@ -22,7 +22,7 @@ export default async function Home() {
  
   return (
     <main>
-      <section>
+      <section style={{minHeight: 'calc(100vh - 300px)'}}>
         <div>
           <Hero profile={profile[0]}/>
           <BlogPostContainer blogPosts={blogPosts} />
